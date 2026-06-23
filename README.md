@@ -12,7 +12,7 @@ Zurich Verity is the Hyper Challenge 2026 cyber prototype by **Good Boys**. It t
 
 | Deliverable | Status | Location |
 | --- | --- | --- |
-| GitHub repository package | Ready locally on `main`; push when final remote is created. | [submission/manifest.md](submission/manifest.md) |
+| GitHub repository package | Published on `main`. | [submission/manifest.md](submission/manifest.md) |
 | Presentation video | Recorded and hosted externally. | <https://exploration.nbg1.your-objectstorage.com/zurich-verity_good-boys.mp4> |
 | Transcript | Cleaned Markdown transcript plus SRT/VTT captions. | [submission/video/](submission/video/) |
 | Business deck | Final PDF plus slide images. | [submission/presentation/](submission/presentation/) |
