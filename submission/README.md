@@ -2,6 +2,7 @@
 
 This folder contains the final deliverables that can be submitted or referenced from the repository.
 
+- [Submission manifest](manifest.md)
 - [Presentation PDF](presentation/zurich-verity_good-boys.pdf)
 - [Technical Summary PDF](technical/zurich-verity_good-boys_technical-summary.pdf)
 - [Video transcript](video/zurich-verity_good-boys-transcript.md)
@@ -13,3 +14,5 @@ This folder contains the final deliverables that can be submitted or referenced 
 - [Working PR review prototype](../prototype/live-pr-review/)
 
 Video file: <https://exploration.nbg1.your-objectstorage.com/zurich-verity_good-boys.mp4>
+
+The large video is hosted externally and intentionally not committed to git.

@@ -4,9 +4,20 @@ Continuous security proof for the agentic software era.
 
 Zurich Verity is the Hyper Challenge 2026 cyber prototype by **Good Boys**. It turns new code into scoped, Docker-isolated security validation runs with evidence, risk scoring, and owner-ready remediation. The core idea is simple: security findings should be provable before risky code ships.
 
-[Presentation PDF](submission/presentation/zurich-verity_good-boys.pdf) · [Technical Summary PDF](submission/technical/zurich-verity_good-boys_technical-summary.pdf) · [Live Prototype Proof](docs/live-prototype-proof.md) · [Full Lab Report](reports/full-lab-security-assessment.md)
+[Submission Manifest](submission/manifest.md) · [Presentation PDF](submission/presentation/zurich-verity_good-boys.pdf) · [Technical Summary PDF](submission/technical/zurich-verity_good-boys_technical-summary.pdf) · [Video Transcript](submission/video/zurich-verity_good-boys-transcript.md) · [Live Prototype Proof](docs/live-prototype-proof.md) · [Full Lab Report](reports/full-lab-security-assessment.md)
 
 ![Zurich Verity cover](submission/presentation/slides/slide-1.png)
+
+## Submission Ready
+
+| Deliverable | Status | Location |
+| --- | --- | --- |
+| GitHub repository package | Ready locally on `main`; push when final remote is created. | [submission/manifest.md](submission/manifest.md) |
+| Presentation video | Recorded and hosted externally. | <https://exploration.nbg1.your-objectstorage.com/zurich-verity_good-boys.mp4> |
+| Transcript | Cleaned Markdown transcript plus SRT/VTT captions. | [submission/video/](submission/video/) |
+| Business deck | Final PDF plus slide images. | [submission/presentation/](submission/presentation/) |
+| Technical summary | Architecture PDF and source slide image. | [submission/technical/](submission/technical/) |
+| Evidence package | Executive, technical, full, and per-finding reports. | [reports/](reports/) |
 
 ## What We Built
 
@@ -20,6 +31,8 @@ Zurich Verity is the Hyper Challenge 2026 cyber prototype by **Good Boys**. It t
 | Production docs | Architecture, security model, implementation plan, and judging-oriented brief. | [docs/](docs/) |
 
 ## Prototype Screens
+
+![The problem](submission/presentation/slides/slide-0-problem.png)
 
 ![Executive summary](submission/presentation/slides/slide-2.png)
 
@@ -117,7 +130,7 @@ zurich-verity/
   smithers/             autonomous red-team workflow definition
   prototype/            working live PR review prototype and demo proof
   reports/              executive report, technical findings, full lab report, evidence notes
-  submission/           final PDFs and slide images
+  submission/           final PDFs, slides, video transcript, captions, and manifest
 ```
 
 ## Team
