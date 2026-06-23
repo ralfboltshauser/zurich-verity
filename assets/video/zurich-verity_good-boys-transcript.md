@@ -2,15 +2,13 @@
 
 Video: `zurich-verity_good-boys.mp4`  
 Duration: 3:31  
-Team: Good Boys
-
 There are currently two problems in cybersecurity reinforcing each other.
 
 First, we have agentic engineering, which accelerates the way we ship code, resulting in more pressure on reviews.
 
 The second problem is that AI models can do pentests and cyber audits on production software, and therefore threat actors can leverage this to find vulnerabilities faster and exploit them faster.
 
-This problem has been the challenge of the cyber track at the Hyper Challenge, and we have solved this with Zurich Verity.
+This is the problem Zurich Verity is designed to solve.
 
 What we've done is we've built a custom harness that can exploit the lab.
 

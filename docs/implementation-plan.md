@@ -4,7 +4,7 @@
 
 - Publish the Docker harness foundation.
 - Publish the Smithers workflow definition.
-- Include final submission PDFs and slide images.
+- Include product PDFs and slide images.
 - Include executive and technical lab reports with evidence-backed findings.
 
 ## Milestone 2: Repeatable Runs

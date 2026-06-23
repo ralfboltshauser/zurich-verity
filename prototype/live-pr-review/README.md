@@ -1,6 +1,6 @@
 # Live PR Review Prototype
 
-This folder contains the working Zurich Verity prototype used for the recorded demo.
+This folder contains the working Zurich Verity pull-request review prototype.
 
 It is a minimal application plus the GitHub Action, Smithers workflows, Docker Codex sandbox, and Docker proof harness that were proven end to end in the companion demo repository:
 
@@ -24,19 +24,15 @@ It is a minimal application plus the GitHub Action, Smithers workflows, Docker C
 | --- | --- |
 | `.github/workflows/verity-pr-review.yml` | GitHub Actions trigger for pull requests and manual workflow dispatch. |
 | `.smithers/workflows/verity-pr-review.tsx` | Parent Smithers workflow: scope intake, Codex review, Docker proof, report readiness. |
-| `.smithers/workflows/sandboxed-security-review.tsx` | Child Smithers workflow that runs Codex as the security reviewer inside Docker. |
+| `.smithers/workflows/sandboxed-security-review.tsx` | Child Smithers workflow that runs Codex security analysis inside Docker. |
 | `.smithers/providers/docker-codex.ts` | Docker sandbox provider that mounts the repository and runs the child workflow. |
 | `harness/scripts/security_scan.py` | Local proof scanner for exploitable demo issues. |
 | `harness/scripts/verity-pr-review.sh` | Evidence capture and PR-comment generation. |
-| `scripts/prepare-recording-demo.sh` | Creates a fresh recording branch with an intentionally vulnerable endpoint. |
+| `scripts/prepare-demo-pr.sh` | Creates a fresh demo branch with an intentionally vulnerable endpoint. |
 
-## Recording Flow
+## Demo Flow
 
-Use the prepared branch in the demo repository:
-
-<https://github.com/ralfboltshauser/zurich-verity-demo/compare/main...demo/recording-live-security-review?expand=1>
-
-Open the pull request on camera. The workflow will run automatically and produce the PR evidence comment.
+Open a pull request against the demo repository with the intentionally vulnerable endpoint. The workflow will run automatically and produce the PR evidence comment.
 
 ## Notes
 

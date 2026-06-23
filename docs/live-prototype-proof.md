@@ -7,7 +7,6 @@ Zurich Verity was proven as a working pull-request security review workflow, not
 - Demo repository: <https://github.com/ralfboltshauser/zurich-verity-demo>
 - Proven PR: <https://github.com/ralfboltshauser/zurich-verity-demo/pull/3>
 - Proven workflow run: <https://github.com/ralfboltshauser/zurich-verity-demo/actions/runs/28005618755>
-- Recording branch: <https://github.com/ralfboltshauser/zurich-verity-demo/tree/demo/recording-live-security-review>
 
 ## End-To-End Behavior
 

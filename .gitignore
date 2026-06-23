@@ -25,7 +25,7 @@ prototype/live-pr-review/.smithers/tmp/
 prototype/live-pr-review/.smithers/sandboxes/
 prototype/live-pr-review/.smithers/*.db*
 
-submission/video/*.mp4
-submission/video/*.wav
+assets/video/*.mp4
+assets/video/*.wav
 
 .DS_Store

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-branch="demo/recording-$(date -u +%Y%m%d-%H%M%S)"
+branch="demo/security-review-$(date -u +%Y%m%d-%H%M%S)"
 
 git fetch origin main
 git checkout -B "$branch" origin/main
@@ -53,11 +53,11 @@ path.write_text(text.replace(needle, insert))
 PY
 
 git add demo_app/app.py
-git commit -m "feat: add recording demo debug users endpoint"
+git commit -m "feat: add demo debug users endpoint"
 git push -u origin "$branch"
 
 gh pr create \
   --base main \
   --head "$branch" \
-  --title "Recording demo: debug users endpoint" \
-  --body "Recording demo PR for Zurich Verity. This intentionally introduces an unauthenticated debug endpoint with placeholder sensitive fields so the Verity Smithers workflow can prove the issue, comment with evidence, and apply a remediation commit."
+  --title "Demo: debug users endpoint" \
+  --body "Demo PR for Zurich Verity. This intentionally introduces an unauthenticated debug endpoint with placeholder sensitive fields so the Verity Smithers workflow can prove the issue, comment with evidence, and apply a remediation commit."

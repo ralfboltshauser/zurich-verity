@@ -1,6 +1,6 @@
 # Executive Summary
 
-Zurich Verity found and proved a realistic breach path in the Hyper Challenge lab.
+Zurich Verity found and proved a realistic breach path in the validation lab.
 
 ## Scope
 

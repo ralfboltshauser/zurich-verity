@@ -8,7 +8,7 @@ docker compose build
 docker compose run --rm verity-runner bash
 ```
 
-For the Hyper Challenge lab, route traffic through the local lab proxy from inside Docker:
+For a proxied validation environment, route traffic through the local proxy from inside Docker:
 
 ```bash
 export HTTP_PROXY=http://host.docker.internal:8081

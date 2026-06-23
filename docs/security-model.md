@@ -24,7 +24,7 @@ Evidence should be split into two layers:
 - **Raw evidence:** requests, responses, logs, screenshots, tokens, and timestamps.
 - **Curated evidence:** redacted proof, reproduction commands, impact explanation, and remediation guidance.
 
-Sensitive values should be redacted before public sharing. Private challenge submissions can retain exact lab evidence where allowed.
+Sensitive values should be redacted before public sharing. Internal audit packages can retain exact lab evidence where policy allows.
 
 ## Guardrails
 
