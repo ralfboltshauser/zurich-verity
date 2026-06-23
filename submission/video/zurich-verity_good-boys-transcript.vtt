@@ -1,0 +1,107 @@
+WEBVTT
+
+00:00:01.140 --> 00:00:05.340
+There are currently two problems in cybersecurity reinforcing each other.
+
+00:00:05.340 --> 00:00:10.340
+First, we have agentic engineering, which accelerates the way we ship code,
+
+00:00:10.340 --> 00:00:13.740
+resulting in more pressure on reviews.
+
+00:00:13.740 --> 00:00:21.140
+The second problem is that AI models can do pentests and cyber audits on production software
+
+00:00:21.140 --> 00:00:27.140
+and therefore threat actors can leverage this to find vulnerabilities faster and exploit them faster.
+
+00:00:28.140 --> 00:00:33.140
+This problem has been the challenge of the cyber track at the Hyper Challenge.
+
+00:00:33.140 --> 00:00:37.140
+And we have solved this with Zurich Verity.
+
+00:00:37.140 --> 00:00:42.140
+What we've done is we've built a custom harness that can exploit the lab.
+
+00:00:42.140 --> 00:00:49.140
+What you can see here is that we've found 63 findings, which each of those contain a PoC.
+
+00:00:49.140 --> 00:00:53.140
+So it's code you can run to verify that the finding actually works.
+
+00:00:53.140 --> 00:01:02.140
+It's not just a report that claims to have found something, it's always a script or a PoC that shows the findings step by step.
+
+00:01:02.140 --> 00:01:07.140
+We have mapped all four services and of course hope to have found all the issues.
+
+00:01:07.140 --> 00:01:12.140
+We cannot prove that, but we can prove the 63 issues we have found.
+
+00:01:12.140 --> 00:01:15.140
+But we went a step further.
+
+00:01:15.140 --> 00:01:21.140
+We have not only built this custom cybersecurity harness based on previous research that we've done,
+
+00:01:21.140 --> 00:01:29.140
+it's actually also contained in a Smithers workflow, which acts based on PRs, on GitHub PRs.
+
+00:01:29.140 --> 00:01:31.140
+So let's take a look at this.
+
+00:01:31.140 --> 00:01:41.140
+What I can do here is in the Zurich Verity demo repository, I can create a new pull request of this demo branch, which contains a security issue.
+
+00:01:41.140 --> 00:01:48.140
+What then happens is our workflow directly pulls this branch and does an investigation on it.
+
+00:01:48.140 --> 00:02:01.140
+It takes the difference between the last main state and this branch to pentest it more efficiently, so it doesn't have to map the whole codebase over and over again, so it is more efficient.
+
+00:02:01.140 --> 00:02:04.140
+The first time we run it, it maps the whole codebase.
+
+00:02:04.140 --> 00:02:08.140
+What you can see here now is the pull request actually running.
+
+00:02:08.140 --> 00:02:15.140
+But because we don't want to wait for the pull request, I've run it already before and we can quickly open that.
+
+00:02:15.140 --> 00:02:17.140
+Now a note on speed.
+
+00:02:17.140 --> 00:02:23.140
+Speed was not a core factor we optimized for it, because this can run in the background and finish overnight.
+
+00:02:23.140 --> 00:02:31.140
+We didn't optimize on speed, we optimized on accuracy and provability of our issues that we find.
+
+00:02:31.140 --> 00:02:35.140
+Here you can see the exact same PR run through Verity.
+
+00:02:36.140 --> 00:02:43.140
+First, it can find the issues, the findings, and actually write about them.
+
+00:02:43.140 --> 00:02:50.140
+It can let you know about what happened exactly, and then it can even block the pull request.
+
+00:02:50.140 --> 00:03:00.140
+So you can see here Zurich Verity review has blocked the pull request, so it cannot ship into production because it has found a critical issue.
+
+00:03:00.140 --> 00:03:09.140
+It can also evaluate between different levels of criticality, so it can sometimes block a pull request or not, even if it has found issues.
+
+00:03:09.140 --> 00:03:16.140
+Here you can see the integration of Zurich Verity into a continuous pentesting loop,
+
+00:03:16.140 --> 00:03:24.140
+so all the software you ship will continuously be pentested before it reaches production, before threat actors can attack it,
+
+00:03:24.140 --> 00:03:28.140
+based on the custom cyber harness that we have built.
+
+00:03:28.140 --> 00:03:31.140
+This is Zurich Verity.
+
