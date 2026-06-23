@@ -8,7 +8,7 @@ Challenge: Hyper Challenge 2026, Cyber Track
 
 | Deliverable | Status | Source |
 | --- | --- | --- |
-| GitHub repository URL | Pending final push | create private repo from this local repository |
+| GitHub repository URL | Ready | <https://github.com/ralfboltshauser/zurich-verity> |
 | Presentation video | Ready | <https://exploration.nbg1.your-objectstorage.com/zurich-verity_good-boys.mp4> |
 | Transcript | Ready | [video/zurich-verity_good-boys-transcript.md](video/zurich-verity_good-boys-transcript.md) |
 | Captions, SRT | Ready | [video/zurich-verity_good-boys-transcript.srt](video/zurich-verity_good-boys-transcript.srt) |
@@ -36,11 +36,6 @@ Challenge: Hyper Challenge 2026, Cyber Track
 - Smithers workflow shown as a PR-triggered, evidence-first validation loop.
 - Transcript and captions generated from the final video.
 
-## Final Publish Command
+## Repository
 
-Run this only when ready to publish the final repository:
-
-```bash
-gh repo create zurich-verity --private --source . --remote origin --push
-```
-
+GitHub: <https://github.com/ralfboltshauser/zurich-verity>
