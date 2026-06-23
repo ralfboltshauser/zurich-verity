@@ -1,0 +1,10 @@
+.git
+.verity
+runs
+smithers.db
+.smithers/node_modules
+.smithers/executions
+.smithers/runs
+.smithers/state
+.smithers/tmp
+__pycache__

@@ -1,0 +1,20 @@
+services:
+  verity-runner:
+    build:
+      context: ../..
+      dockerfile: harness/docker/Dockerfile
+    working_dir: /workspace
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+    environment:
+      VERITY_SCOPE: /workspace/harness/policies/scope.allowlist
+      PR_NUMBER: ${PR_NUMBER:-local}
+      GITHUB_REPOSITORY: ${GITHUB_REPOSITORY:-local/zurich-verity-demo}
+      GITHUB_SHA: ${GITHUB_SHA:-local}
+    volumes:
+      - ../..:/workspace
+    networks:
+      - verity-demo
+
+networks:
+  verity-demo:
+    driver: bridge

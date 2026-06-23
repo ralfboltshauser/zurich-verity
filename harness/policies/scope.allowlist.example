@@ -1,0 +1,5 @@
+# One hostname per line. Active testing must stay inside this scope.
+portal.acme.local
+apex-markets.acme.local
+customer-api.acme.local
+devops-hub.acme.local
